@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/classes3.css" />
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="mypage-container">
+            <header>
+                <h4 class="text-bold text-blue">UNIVERSITY</h4>
+                <ul>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="classes2.html">강의수강</a></li>
+                    <li><a href="#">학교소식</a></li>
+                </ul>
+            </header>
+            <div class="header-bottom">
+              
+            </div>
+            <div class="mypage-main mt-5">
+                <div class="mypage-left">
+                    <ul class="tabss">
+                        <li class="logo">
+                            <div class="left-logo">
+                                <p>UNIVERSITY</p>
+                                <h4>전자출결시스템</h4>
+                            </div>
+                        </li>
+                        <li
+                        class="tab-links current"
+                        onclick="change_btn(event)"
+                        data-tab="tab-11"
+                        id="jeon">
+                           강의정보
+                        </li>
+                        <li class="tab-links" onclick="change_btn(event)" id="gyo" data-tab="tab-2">출석부</li>
+                        <li class="tab-links" onclick="change_btn(event)" id="gyo" data-tab="tab-3">성적반영</li>
+                        <li class="tab-links" onclick="change_btn(event)" id="gyo" data-tab="tab-4">회원정보 수정</li>
+                    </ul>
+                </div>
+                <div class="mypage-right">
+                  <!--mypage-right content 1-->
+                   
+                    <div id="tab-11" class="tab-content current jang">
+                       <h1>강의정보</h1>
+                       <div class="choice">
+                            <span>학기 선택</span>
+                            <select name="mester" id="mester">
+                                <option value="first">2024년도 1학기</option>
+                                <option value="second">2024년도 2학기</option>
+                                <option value="third">2024년도 3학기</option>
+                                <option value="fourth">2024년도 4학기</option>
+                            </select>
+                       </div>
+                       <div class="first box">
+                        <table class="table mt-4">
+                          <col width="11%" />
+                          <col width="11%" />
+                          <col width="11%" />
+                          <col width="11%" />
+                          <col width="11%" />
+                          <thead class="text-center border-primary t-list">
+                            <tr>
+                              <th>과목코드</th>
+                              <th>과목명</th>
+                              <th>담당교수</th>
+                              <th>강의실</th>
+                              <th>강의시간</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-center">
+                            <tr>
+                                <td>J001</td>
+                                <td>JAVA</td>
+                                <td>김미정</td>
+                                <td>삼성관 508</td>
+                                <td>
+                                    <ul>
+                                        <li>월 09:00 - 12:00</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>P001</td>
+                                <td>pyhton</td>
+                                <td>안주영</td>
+                                <td>삼성관 508</td>
+                                <td>
+                                  <ul>
+                                      <li>월 09:00 - 12:00</li>
+                                  </ul>
+                              </td>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="second box">
+                        <table class="table mt-4">
+                          <col width="11%" />
+                          <col width="11%" />
+                          <col width="11%" />
+                          <col width="11%" />
+                          <col width="11%" />
+                          <thead class="text-center border-primary t-list">
+                            <tr>
+                              <th>과목코드</th>
+                              <th>과목명</th>
+                              <th>담당교수</th>
+                              <th>강의실</th>
+                              <th>강의시간</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-center">
+                            <tr>
+                                <td>J001</td>
+                                <td>JAVA</td>
+                                <td>김미정</td>
+                                <td>삼성관 508</td>
+                                <td>
+                                    <ul>
+                                        <li>월 09:00 - 12:00</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>J001</td>
+                                <td>JAVA</td>
+                                <td>김미정</td>
+                                <td>삼성관 508</td>
+                                <td>
+                                  <ul>
+                                      <li>월 09:00 - 12:00</li>
+                                  </ul>
+                              </td>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="third box">
+                        <table class="table mt-4">
+                          <col width="11%" />
+                          <col width="11%" />
+                          <col width="11%" />
+                          <col width="11%" />
+                          <col width="11%" />
+                          <thead class="text-center border-primary t-list">
+                            <tr>
+                              <th>과목코드</th>
+                              <th>과목명</th>
+                              <th>담당교수</th>
+                              <th>강의실</th>
+                              <th>강의시간</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-center">
+                            <tr>
+                                <td>J001</td>
+                                <td>JAVA</td>
+                                <td>김미정</td>
+                                <td>삼성관 508</td>
+                                <td>
+                                    <ul>
+                                        <li>월 09:00 - 12:00</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>J001</td>
+                                <td>JAVA</td>
+                                <td>김미정</td>
+                                <td>삼성관 508</td>
+                                <td>
+                                  <ul>
+                                      <li>월 09:00 - 12:00</li>
+                                  </ul>
+                              </td>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="fourth box">
+                        <table class="table mt-4">
+                          <col width="11%" />
+                          <col width="11%" />
+                          <col width="11%" />
+                          <col width="11%" />
+                          <col width="11%" />
+                          <thead class="text-center border-primary t-list">
+                            <tr>
+                              <th>과목코드</th>
+                              <th>과목명</th>
+                              <th>담당교수</th>
+                              <th>강의실</th>
+                              <th>강의시간</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-center">
+                            <tr>
+                                <td>J001</td>
+                                <td>JAVA</td>
+                                <td>김미정</td>
+                                <td>삼성관 508</td>
+                                <td>
+                                    <ul>
+                                        <li>월 09:00 - 12:00</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>J001</td>
+                                <td>JAVA</td>
+                                <td>김미정</td>
+                                <td>삼성관 508</td>
+                                <td>
+                                  <ul>
+                                      <li>월 09:00 - 12:00</li>
+                                  </ul>
+                              </td>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                      <!--mypage-right content 2-->
+                      <div id="tab-2" class="tab-content container-list">
+                            <h1>출석부</h1>
+                            <div class="choice">
+                                <span>학기 / 과목 선택</span>
+                                <select name="mester" id="mester">
+                                    <option value="first">2024년도 1학기</option>
+                                    <option value="second">2024년도 2학기</option>
+                                    <option value="third">2024년도 3학기</option>
+                                    <option value="fourth">2024년도 4학기</option>
+                                </select>
+                                <select name="mester" id="mester">
+                                    <option value="first">JAVA</option>
+                                    <option value="second">MYSQL</option>
+                                    <option value="third">Python</option>
+                                </select>
+                                <input type='date' id='currentDate' min="2024-05-03" max="2024-07-30"/>
+                            </div>
+                            <div class="t-check first box">
+                                <table class="table mt-4">
+                                    <col width="9%" />
+                                    <col width="16%" />
+                                    <col width="10%" />
+                                    <col width="12%" />
+                                    <col width="9%" />
+                                    <col width="50%" />
+                                    <thead class="text-center border-primary">
+                                      <tr>
+                                        <th>순번</th>
+                                        <th>학과(전공)</th>
+                                        <th>학년</th>
+                                        <th>학번</th>
+                                        <th>이름</th>
+                                        <th>상태</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                      <tr>
+                                        <td>1</td>
+                                        <td>간호학과</td>
+                                        <td>3</td>
+                                        <td>1894013</td>
+                                        <td>홍길동</td>
+                                        <td>
+                                          <input type="checkbox" id="ok" />출석
+                                          <input type="checkbox" id="ok" />결석
+                                          <input type="checkbox" id="ok" />지각
+                                          <input type="checkbox" id="ok" />기타
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>간호학과</td>
+                                        <td>3</td>
+                                        <td>1894013</td>
+                                        <td>홍길동</td>
+                                        <td>
+                                          <input type="checkbox" id="ok" />출석
+                                          <input type="checkbox" id="ok" />결석
+                                          <input type="checkbox" id="ok" />지각
+                                          <input type="checkbox" id="ok" />기타
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>간호학과</td>
+                                        <td>3</td>
+                                        <td>1894013</td>
+                                        <td>홍길동</td>
+                                        <td>
+                                          <input type="checkbox" id="ok" />출석
+                                          <input type="checkbox" id="ok" />결석
+                                          <input type="checkbox" id="ok" />지각
+                                          <input type="checkbox" id="ok" />기타
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>간호학과</td>
+                                        <td>3</td>
+                                        <td>1894013</td>
+                                        <td>홍길동</td>
+                                        <td>
+                                          <input type="checkbox" id="ok" />출석
+                                          <input type="checkbox" id="ok" />결석
+                                          <input type="checkbox" id="ok" />지각
+                                          <input type="checkbox" id="ok" />기타
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>간호학과</td>
+                                        <td>3</td>
+                                        <td>1894013</td>
+                                        <td>홍길동</td>
+                                        <td>
+                                          <input type="checkbox" id="ok" />출석
+                                          <input type="checkbox" id="ok" />결석
+                                          <input type="checkbox" id="ok" />지각
+                                          <input type="checkbox" id="ok" />기타
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                            <div class="t-check second box">
+                              <table class="table mt-4">
+                                  <col width="9%" />
+                                  <col width="16%" />
+                                  <col width="10%" />
+                                  <col width="12%" />
+                                  <col width="9%" />
+                                  <col width="50%" />
+                                  <thead class="text-center border-primary">
+                                    <tr>
+                                      <th>순번</th>
+                                      <th>학과(전공)</th>
+                                      <th>학년</th>
+                                      <th>학번</th>
+                                      <th>이름</th>
+                                      <th>상태</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody class="text-center">
+                                    <tr>
+                                      <td>1</td>
+                                      <td>간호학과</td>
+                                      <td>3</td>
+                                      <td>1894013</td>
+                                      <td>김철수</td>
+                                      <td>
+                                        <input type="checkbox" id="ok" />출석
+                                        <input type="checkbox" id="ok" />결석
+                                        <input type="checkbox" id="ok" />지각
+                                        <input type="checkbox" id="ok" />기타
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>간호학과</td>
+                                      <td>3</td>
+                                      <td>1894013</td>
+                                      <td>김철수</td>
+                                      <td>
+                                        <input type="checkbox" id="ok" />출석
+                                        <input type="checkbox" id="ok" />결석
+                                        <input type="checkbox" id="ok" />지각
+                                        <input type="checkbox" id="ok" />기타
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>간호학과</td>
+                                      <td>3</td>
+                                      <td>1894013</td>
+                                      <td>김철수</td>
+                                      <td>
+                                        <input type="checkbox" id="ok" />출석
+                                        <input type="checkbox" id="ok" />결석
+                                        <input type="checkbox" id="ok" />지각
+                                        <input type="checkbox" id="ok" />기타
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>간호학과</td>
+                                      <td>3</td>
+                                      <td>1894013</td>
+                                      <td>김철수</td>
+                                      <td>
+                                        <input type="checkbox" id="ok" />출석
+                                        <input type="checkbox" id="ok" />결석
+                                        <input type="checkbox" id="ok" />지각
+                                        <input type="checkbox" id="ok" />기타
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>간호학과</td>
+                                      <td>3</td>
+                                      <td>1894013</td>
+                                      <td>김철수</td>
+                                      <td>
+                                        <input type="checkbox" id="ok" />출석
+                                        <input type="checkbox" id="ok" />결석
+                                        <input type="checkbox" id="ok" />지각
+                                        <input type="checkbox" id="ok" />기타
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                          </div>
+                          <div class="t-check third box">
+                            <table class="table mt-4">
+                                <col width="9%" />
+                                <col width="16%" />
+                                <col width="10%" />
+                                <col width="12%" />
+                                <col width="9%" />
+                                <col width="50%" />
+                                <thead class="text-center border-primary">
+                                  <tr>
+                                    <th>순번</th>
+                                    <th>학과(전공)</th>
+                                    <th>학년</th>
+                                    <th>학번</th>
+                                    <th>이름</th>
+                                    <th>상태</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                  <tr>
+                                    <td>1</td>
+                                    <td>간호학과</td>
+                                    <td>3</td>
+                                    <td>1894013</td>
+                                    <td>바보</td>
+                                    <td>
+                                      <input type="checkbox" id="ok" />출석
+                                      <input type="checkbox" id="ok" />결석
+                                      <input type="checkbox" id="ok" />지각
+                                      <input type="checkbox" id="ok" />기타
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>간호학과</td>
+                                    <td>3</td>
+                                    <td>1894013</td>
+                                    <td>바보</td>
+                                    <td>
+                                      <input type="checkbox" id="ok" />출석
+                                      <input type="checkbox" id="ok" />결석
+                                      <input type="checkbox" id="ok" />지각
+                                      <input type="checkbox" id="ok" />기타
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>간호학과</td>
+                                    <td>3</td>
+                                    <td>1894013</td>
+                                    <td>바보</td>
+                                    <td>
+                                      <input type="checkbox" id="ok" />출석
+                                      <input type="checkbox" id="ok" />결석
+                                      <input type="checkbox" id="ok" />지각
+                                      <input type="checkbox" id="ok" />기타
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>간호학과</td>
+                                    <td>3</td>
+                                    <td>1894013</td>
+                                    <td>바보</td>
+                                    <td>
+                                      <input type="checkbox" id="ok" />출석
+                                      <input type="checkbox" id="ok" />결석
+                                      <input type="checkbox" id="ok" />지각
+                                      <input type="checkbox" id="ok" />기타
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>간호학과</td>
+                                    <td>3</td>
+                                    <td>1894013</td>
+                                    <td>바보</td>
+                                    <td>
+                                      <input type="checkbox" id="ok" />출석
+                                      <input type="checkbox" id="ok" />결석
+                                      <input type="checkbox" id="ok" />지각
+                                      <input type="checkbox" id="ok" />기타
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                            <div class="mypage-btnbox">
+                                <button type="submit" class="btn classesbtn">저장</button>
+                              </div>
+                       </div>
+
+                <!--mypage-right content 3-->
+                <div id="tab-4" class="recre tab-content">
+                    <form action="">
+                        <h1>회원정보 수정</h1>
+                        <ul class="mt-5">
+                            <li>
+                                <input type="password" class="form-control col-4" placeholder="비밀번호 수정">
+                            </li>
+                            <li>
+                                <input type="password" class="form-control col-4" placeholder="비밀번호 수정 확인">
+                            </li>
+                            <li>
+                                <input type="text" class="form-control col-6" placeholder="집주소 수정">
+                            </li>
+                        </ul>
+                        <div class="mypage-btnbox">
+                            <button type="submit" class="btn classesbtn">변경</button>
+                        </div>
+                    </form>   
+                </div>
+
+                <!--mypage-right content 4-->
+                <div id="tab-3" class="score tab-content">
+                  <h1>성적입력</h1>
+                  <div class="choice">
+                    <span>학기 / 과목 선택</span>
+                    <select name="mester" id="mester">
+                        <option value="first">2024년도 1학기</option>
+                        <option value="second">2024년도 2학기</option>
+                        <option value="third">2024년도 3학기</option>
+                        <option value="fourth">2024년도 4학기</option>
+                    </select>
+                    <select name="mester" id="mester">
+                        <option value="first">JAVA</option>
+                        <option value="second">MYSQL</option>
+                        <option value="third">Python</option>
+                    </select>
+                </div>
+                  <div class="t-num first box">
+                    <table class="table mt-4">
+                        <col width="10%" />
+                        <col width="15%" />
+                        <col width="10%" />
+                        <col width="11%" />
+                        <col width="11%" />
+                        <col width="45%" />
+                        <thead class="text-center border-primary">
+                          <tr>
+                            <th>순번</th>
+                            <th>학과(전공)</th>
+                            <th>학년</th>
+                            <th>학번</th>
+                            <th>이름</th>
+                            <th>성적</th>
+                          </tr>
+                        </thead>
+                        <tbody class="text-center">
+                          <tr>
+                            <td>1</td>
+                            <td>간호학과</td>
+                            <td>3</td>
+                            <td>1894013</td>
+                            <td>홍길동</td>
+                            <td>
+                              <input type="number" id="testnum" /> / 4.5
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>간호학과</td>
+                            <td>3</td>
+                            <td>1894013</td>
+                            <td>홍길동</td>
+                            <td>
+                                <input type="number" id="testnum" /> / 4.5
+                              </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>간호학과</td>
+                            <td>3</td>
+                            <td>1894013</td>
+                            <td>홍길동</td>
+                            <td>
+                                <input type="number" id="testnum" /> / 4.5
+                              </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>간호학과</td>
+                            <td>3</td>
+                            <td>1894013</td>
+                            <td>홍길동</td>
+                            <td>
+                                <input type="number" id="testnum" /> / 4.5
+                              </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>간호학과</td>
+                            <td>3</td>
+                            <td>1894013</td>
+                            <td>홍길동</td>
+                            <td>
+                                <input type="number" id="testnum" /> / 4.5
+                              </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="t-num second box">
+                  <table class="table mt-4">
+                      <col width="10%" />
+                      <col width="15%" />
+                      <col width="10%" />
+                      <col width="11%" />
+                      <col width="11%" />
+                      <col width="45%" />
+                      <thead class="text-center border-primary">
+                        <tr>
+                          <th>순번</th>
+                          <th>학과(전공)</th>
+                          <th>학년</th>
+                          <th>학번</th>
+                          <th>이름</th>
+                          <th>성적</th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-center">
+                        <tr>
+                          <td>1</td>
+                          <td>간호학과</td>
+                          <td>3</td>
+                          <td>1894013</td>
+                          <td>김철수</td>
+                          <td>
+                            <input type="number" id="testnum" /> / 4.5
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>간호학과</td>
+                          <td>3</td>
+                          <td>1894013</td>
+                          <td>김철수</td>
+                          <td>
+                              <input type="number" id="testnum" /> / 4.5
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>간호학과</td>
+                          <td>3</td>
+                          <td>1894013</td>
+                          <td>김철수</td>
+                          <td>
+                              <input type="number" id="testnum" /> / 4.5
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>간호학과</td>
+                          <td>3</td>
+                          <td>1894013</td>
+                          <td>김철수</td>
+                          <td>
+                              <input type="number" id="testnum" /> / 4.5
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>간호학과</td>
+                          <td>3</td>
+                          <td>1894013</td>
+                          <td>김철수</td>
+                          <td>
+                              <input type="number" id="testnum" /> / 4.5
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+              </div>
+              <div class="t-num third box">
+                <table class="table mt-4">
+                    <col width="10%" />
+                    <col width="15%" />
+                    <col width="10%" />
+                    <col width="11%" />
+                    <col width="11%" />
+                    <col width="45%" />
+                    <thead class="text-center border-primary">
+                      <tr>
+                        <th>순번</th>
+                        <th>학과(전공)</th>
+                        <th>학년</th>
+                        <th>학번</th>
+                        <th>이름</th>
+                        <th>성적</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-center">
+                      <tr>
+                        <td>1</td>
+                        <td>간호학과</td>
+                        <td>3</td>
+                        <td>1894013</td>
+                        <td>바보</td>
+                        <td>
+                          <input type="number" id="testnum" /> / 4.5
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>간호학과</td>
+                        <td>3</td>
+                        <td>1894013</td>
+                        <td>바보</td>
+                        <td>
+                            <input type="number" id="testnum" /> / 4.5
+                          </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>간호학과</td>
+                        <td>3</td>
+                        <td>1894013</td>
+                        <td>바보</td>
+                        <td>
+                            <input type="number" id="testnum" /> / 4.5
+                          </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>간호학과</td>
+                        <td>3</td>
+                        <td>1894013</td>
+                        <td>바보</td>
+                        <td>
+                            <input type="number" id="testnum" /> / 4.5
+                          </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>간호학과</td>
+                        <td>3</td>
+                        <td>1894013</td>
+                        <td>바보</td>
+                        <td>
+                            <input type="number" id="testnum" /> / 4.5
+                          </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

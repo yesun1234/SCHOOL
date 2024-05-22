@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css");
+@import url("animate.min.css");
+@import url("bootstrap.min.css");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+a,
+a link {
+  color: #000;
+  text-decoration: none;
+}
+.text-center {
+  text-align: center;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-white{
+    color: #fff;
+}
+.text-blue {
+  color: #00006f;
+}
+.text-red {
+  color: rgb(250, 41, 41);
+}
+header {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  header > ul {
+    display: flex;
+    font-weight: bold;
+    padding-top: 3px;
+  }
+  header > ul > li {
+    margin-right: 30px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .main{
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    justify-content: left;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .container-left{
+    width: 40%;
+  }
+  .container-right{
+    width: 60%;
+  }
+  .right-top{
+    width: 100%;
+    height: 60%;
+    background-image: url(../image/teacher.jpg);
+    background-size: cover;
+    opacity: 0.8;
+  }
+  .right-bottom{
+    height: 40%;
+  }
+  .right-bottom ul{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+  }
+  .right-bottom ul li{
+    width: 25%;
+    height: 100%;
+    border-right: 0.5px solid rgba(0, 0, 0, 0.07);
+  }
+  .container-left ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+  }
+  .container-left ul:nth-child(5) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-left ul:nth-child(2) li,
+  .container-left ul:nth-child(3) li{
+    border-right: 0.5px solid rgba(0, 0, 0, 0.07);
+    width: 33.33333334%;
+    height: 100%;
+  }
+  .container-left ul:nth-child(4) li{
+    width: 50%;
+    height: 100%;
+  }
+  .container-left ul:nth-child(5) li{
+    width: 50%;
+    height: 100%;
+  }
+  .container-left ul:nth-child(5) li:nth-child(1),
+  .container-left ul:nth-child(5) li:nth-child(3){
+    width: 20%;
+  }
+  .container-left ul:nth-child(5) li:nth-child(2){
+    width: 70%;
+    background-image: url(../image/main2.png);
+    background-size : cover;
+    background-color: hsl(157, 82%, 38%);
+    opacity: 0.5;
+    background-blend-mode: multiply;
+    text-align: left;
+    padding-left: 3ch;
+    padding-right: 3ch;
+    line-height: 5;
+    color: #fff;
+  }
+  .container-left ul:nth-child(4) li:nth-child(1){
+    width: 70%;
+    background-image: url(../image/teacher03.jpg);
+    background-size : cover;
+    background-color: rgb(11, 61, 197);
+    opacity: 0.6;
+    background-blend-mode: multiply;
+    text-align: left;
+    padding-left: 3ch;
+    padding-right: 3ch;
+    line-height: 5;
+    color: #fff;
+  }
+  .container-left ul:nth-child(1){
+    background-image: url(../image/teacher04.jpg);
+    background-size : cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    mask-image: linear-gradient(to top right, rgba(0, 0, 0, 2), rgba(0, 0, 0, 0));
+    
+  }
+  .container-left ul:nth-child(1) li:nth-child(1){
+    background-image: url(../image/teacher04.jpg);
+    width: 50%;
+    background-color: rgb(34, 36, 143);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size : cover;
+    line-height: 13;
+    text-align: left;
+    padding-left: 3ch;
+  }
+  .container-left ul:nth-child(1) li:nth-child(2){
+    opacity: 0.6;
+  }
+  i{
+    font-size: 60px;
+    color: rgb(165, 164, 164);
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+  }
+  .main a{
+    color: rgb(165, 164, 164);
+    font-size: 18px;
+    text-decoration: none;
+    text-align: left;
+    transition: 300ms;
+  }
+  .main li{
+     text-align: center;
+     transition: 300ms;
+  }
+  footer{
+    background-color: #242323;
+    width: 100%;
+    height: 120px;
+    color: #acacac;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+  footer>div>h4{
+    font-weight: bold;
+    line-height: 3;
+  }
+  .container-left ul:nth-child(2) li:nth-child(1):hover,
+  .container-left ul:nth-child(3) li:nth-child(2):hover,
+  .right-bottom ul:nth-child(1) li:nth-child(2):hover,
+  .right-bottom ul:nth-child(2) li:nth-child(3):hover{
+    background: rgba(181, 181, 230, 0.5);
+  }
+
+  .main li:hover a,
+  .main li:hover a i{
+    color: #000;
+  }
+  

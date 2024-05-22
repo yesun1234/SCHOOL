@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/classes3.css" />
+  </head>
+  <body>
+    <form action="#">
+    <div class="classes-container">
+      <header>
+        <h4 class="text-bold text-blue">UNIVERSITY</h4>
+        <ul>
+          <li><a href="mypage.html">마이페이지</a></li>
+          <li><a href="classes2.html">강의수강</a></li>
+          <li><a href="#">학교소식</a></li>
+        </ul>
+      </header>
+      <hr />
+      <div class="classes-main">
+        <ul class="tabs">
+          <li
+          class="tab-link current"
+          onclick="change_btnn(event)"
+          data-tab="tab-1"
+          id="jeon"
+          >
+            전공
+          </li>
+          <li class="tab-link" onclick="change_btnn(event)" id="gyo" data-tab="tab-22">교양</li>
+        </ul>
+        <div class="classes-bottom-main mt-5">
+          <ul>
+            <li>
+              <div class="redbox">신청</div>
+              수강 신청 가능한 과목
+            </li>
+            <li>
+              <div class="whitebox">완료</div>
+              이번 학기에 수강 신청을 한 과목
+            </li>
+            <li>
+              <div class="blackbox">재수강</div>
+              이미 수강하여 학점을 취득한 과목 (반드시 "재수강"을 해야한다는
+              의미는 아니며, 재수강시 학점은 중복 인정되지 않음)
+            </li>
+            <li class="mt-4 text-red">※장바구니 담으신 과목은 마이페이지 장바구니에 들어가셔서 신청하셔야 수강신청 완료입니다.</li>
+          </ul>
+        </div>
+        <div id="tab-1" class="tab-content current">
+          <table class="table mt-5">
+            <col width="11%" />
+            <col width="20%" />
+            <col width="5%" />
+            <col width="15%" />
+            <col width="5%" />
+            <col width="10%" />
+            <col width="5%" />
+            <col width="13%" />
+            <thead class="text-center border-primary">
+              <tr>
+                <th>과목코드</th>
+                <th>과목명</th>
+                <th>학점</th>
+                <th>담당교수</th>
+                <th>강의시간</th>
+                <th>요일</th>
+                <th>선택</th>
+                <th>수강현황</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <td>J001</td>
+                <td>JAVA</td>
+                <td>3</td>
+                <td>김미정</td>
+                <td>9:00-12:00</td>
+                <td>월 수</td>
+                <td>
+                  <input type="checkbox" class="bt btn btn-primary" id="java" />
+                </td>
+                <td><div class="redbox">신청</div></td>
+              </tr>
+              <tr>
+                <td>P001</td>
+                <td>PYTHON</td>
+                <td>3</td>
+                <td>안주영</td>
+                <td>9:00-12:00</td>
+                <td>월 수</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    class="bt btn btn-primary"
+                    id="python"
+                  />
+                </td>
+                <td>
+                  <div class="whitebox">완료</div>
+                </td>
+              </tr>
+              <tr>
+                <td>M001</td>
+                <td>MYSQL</td>
+                <td>3</td>
+                <td>박승철</td>
+                <td>9:00-12:00</td>
+                <td>월 수</td>
+                <td>
+                  <input type="checkbox" class="bt btn btn-primary" id="java" />
+                </td>
+                <td>
+                  <div class="blackbox">재수강</div>
+                </td>
+              </tr>
+              <tr>
+                <td>M001</td>
+                <td>MYSQL</td>
+                <td>3</td>
+                <td>박승철</td>
+                <td>9:00-12:00</td>
+                <td>월 수</td>
+                <td>
+                  <input type="checkbox" class="bt btn btn-primary" id="java" />
+                </td>
+                <td>
+                  <div class="blackbox">재수강</div>
+                </td>
+              </tr>
+              <tr>
+                <td>M001</td>
+                <td>MYSQL</td>
+                <td>3</td>
+                <td>박승철</td>
+                <td>9:00-12:00</td>
+                <td>월 수</td>
+                <td>
+                  <input type="checkbox" class="bt btn btn-primary" id="java" />
+                </td>
+                <td>
+                  <div class="blackbox">재수강</div>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <!--/전공-->
+        
+        <!--교양-->
+        <div id="tab-22" class="tab-content">
+          <table class="table mt-5">
+            <col width="11%" />
+            <col width="20%" />
+            <col width="5%" />
+            <col width="15%" />
+            <col width="5%" />
+            <col width="10%" />
+            <col width="5%" />
+            <col width="13%" />
+            <thead class="text-center thead-gray">
+              <tr>
+                <th>과목코드</th>
+                <th>과목명</th>
+                <th>학점</th>
+                <th>담당교수</th>
+                <th>강의시간</th>
+                <th>요일</th>
+                <th>선택</th>
+                <th>수강현황</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <td>J001</td>
+                <td>JAVA</td>
+                <td>3</td>
+                <td>김미정</td>
+                <td>9:00-12:00</td>
+                <td>월 수</td>
+                <td>
+                  <input type="checkbox" class="bt btn btn-primary" id="java" />
+                </td>
+                <td><div class="redbox">신청</div></td>
+              </tr>
+              <tr>
+                <td>P001</td>
+                <td>PYTHON</td>
+                <td>3</td>
+                <td>안주영</td>
+                <td>9:00-12:00</td>
+                <td>월 수</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    class="bt btn btn-primary"
+                    id="python"
+                  />
+                </td>
+                <td>
+                  <div class="whitebox">완료</div>
+                </td>
+              </tr>
+              <tr>
+                <td>P001</td>
+                <td>PYTHON</td>
+                <td>3</td>
+                <td>안주영</td>
+                <td>9:00-12:00</td>
+                <td>월 수</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    class="bt btn btn-primary"
+                    id="python"
+                  />
+                </td>
+                <td>
+                  <div class="whitebox">완료</div>
+                </td>
+              </tr>
+              <tr>
+                <td>P001</td>
+                <td>PYTHON</td>
+                <td>3</td>
+                <td>안주영</td>
+                <td>9:00-12:00</td>
+                <td>월 수</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    class="bt btn btn-primary"
+                    id="python"
+                  />
+                </td>
+                <td>
+                  <div class="whitebox">완료</div>
+                </td>
+              </tr>
+              <tr>
+                <td>P001</td>
+                <td>PYTHON</td>
+                <td>3</td>
+                <td>안주영</td>
+                <td>9:00-12:00</td>
+                <td>월 수</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    class="bt btn btn-primary"
+                    id="python"
+                  />
+                </td>
+                <td>
+                  <div class="whitebox">완료</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="btnbox">
+    <button type="submit" class="btn classesbtnn">장바구니 담기</button></div>
+  </form>
+  </body>
+</html>

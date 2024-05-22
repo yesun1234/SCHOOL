@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css");
+@import url("animate.min.css");
+@import url("bootstrap.min.css");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+a,
+a link {
+  color: #000;
+}
+.text-center {
+  text-align: center;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-blue {
+  color: #00006f;
+}
+.text-red {
+  color: rgb(250, 41, 41);
+}
+header {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+header > ul {
+  display: flex;
+  font-weight: bold;
+  padding-top: 3px;
+}
+header > ul > li {
+  margin-right: 30px;
+}
+ul {
+  list-style-type: none;
+}
+ul.tabs {
+  font-weight: 500;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(191, 188, 188, 0.5);
+  background: #fafafa;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+ul.tabs li {
+  background: none;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+}
+.tab-link::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  height: 100%;
+  width: 1px;
+  border-right: 1px solid rgb(202, 202, 202);
+}
+.tab-link:hover,
+.tab-link.active {
+  background-color: #2d2d5f;
+  color: #fff;
+}
+.tab-link:visited {
+  background-color: #2d2d5f;
+  color: #fff;
+}
+.tab-links:hover,
+.tab-links.active2 {
+  background-color: #2d2d5f;
+  color: #fff;
+}
+.tab-links:visited {
+  background-color: #2d2d5f;
+  color: #fff;
+}
+.tab-content {
+  display: none;
+}
+.choice {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.choice span {
+  margin-right: 30px;
+}
+.choice select {
+  width: 200px;
+}
+.tab-content.current {
+  display: inherit;
+}
+button.sub {
+  position: absolute;
+  left: 40%;
+}
+
+.classes-bottom-main {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fafafa;
+  padding: 10px;
+}
+.classes-bottom-main > ul {
+  padding: 0;
+}
+.classes-bottom-main > ul > li:first-child,
+.classes-bottom-main > ul > li:nth-child(2),
+.classes-bottom-main > ul > li:nth-child(3) {
+  display: flex;
+  margin-bottom: 10px;
+}
+.classes-bottom-main > ul > li:first-child div {
+  margin-right: 10px;
+}
+.classes-bottom-main > ul > li:nth-child(2) div,
+.classes-bottom-main > ul > li:nth-child(3) div {
+  margin-right: 10px;
+}
+.redbox {
+  color: #fff;
+  background-color: #272764;
+  border-radius: 10px;
+  width: 62px;
+  height: 30px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 2.5;
+}
+.whitebox {
+  color: #757575;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 2.5;
+  box-shadow: 0px 0px 5px #aaaaaa;
+}
+.blackbox {
+  color: #fff;
+  background-color: rgb(75, 75, 75);
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 2.5;
+  margin: 0;
+}
+.tab-content {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#tab-1 td:last-child,
+#tab-22 td:last-child {
+  padding-left: 6%;
+}
+#tab-11 td:last-child {
+  padding-left: 6px;
+  padding-top: 15px;
+}
+
+.classesbtn {
+  background-color: #3030a5;
+  color: #fff;
+  font-weight: bold;
+  width: 150px;
+  position: absolute;
+  right: 10px;
+}
+.classesbtnn {
+  background-color: #3030a5;
+  color: #fff;
+  font-weight: bold;
+  width: 150px;
+  position: absolute;
+  right: 14%;
+}
+.classesbtn:hover {
+  background-color: #3a3ac5;
+  color: #fff;
+}
+/**********mypage*********/
+.canclebox {
+  background-color: rgb(199, 47, 47);
+  border-radius: 10px;
+  width: 62px;
+  height: 30px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 2.4;
+}
+.canclebox a {
+  color: #fff;
+  text-decoration: none;
+}
+.mypage-main {
+  width: 80%;
+  margin-left: 30px;
+  display: flex;
+}
+.mypage-left > ul {
+  padding: 0;
+}
+.mypage-left {
+  width: 20%;
+}
+.mypage-right {
+  width: 80%;
+}
+.mypage-right > div {
+  margin-left: 60px;
+  margin-right: 0;
+}
+
+.mypage-right table tbody td:last-child {
+  padding: 0;
+}
+.left-logo {
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  background-color: #3030a5;
+  padding-left: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.left-logo > p {
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+}
+.left-logo > p > a {
+  color: #fff;
+}
+.left-logo > h4 {
+  line-height: 0.3;
+  font-size: 28px;
+}
+.left-logo > h4 > a {
+  color: #fff;
+}
+
+.mypage-left > ul > li:not(.logo) {
+  padding-left: 30px;
+  text-align: left;
+  height: 60px;
+  line-height: 3;
+  font-weight: 600;
+  color: gray;
+  font-size: 18px;
+  cursor: pointer;
+}
+.mypage-btnbox {
+  margin-top: auto;
+  margin-left: auto;
+  position: relative;
+  width: 80%;
+}
+.mypage-btnbox > .classesbtn {
+  position: absolute;
+  height: 40px;
+  right: 5%;
+}
+/******list******/
+.container-list {
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding-top: 30px;
+}
+.list-tb {
+  border: none;
+}
+.mysql {
+  position: absolute;
+  width: 100px;
+  height: 152px;
+  background-color: #99cc66;
+}
+.python {
+  position: absolute;
+  width: 100px;
+  height: 152px;
+  background-color: #ff9966;
+}
+.java {
+  background-color: #6699cc;
+  position: absolute;
+  width: 100px;
+  height: 152px;
+}
+.padding-sigan {
+  padding-left: 60%;
+}
+.box-1 {
+  margin-left: 30px;
+  padding-top: 20px;
+}
+
+.container-te {
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  background-color: #fff;
+  padding-bottom: 80px;
+}
+.clock-list {
+  display: flex;
+  justify-content: left;
+}
+.clock-list > ul {
+  font-weight: bold;
+  margin-left: 100px;
+  margin-top: 50px;
+  text-align: center;
+}
+.clock-list > ul a {
+  padding: 0;
+  margin: 0;
+}
+
+.tecontainer {
+  width: 800px;
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recre {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.recre ul {
+  margin: 0;
+}
+.jang h1,
+.score h1,
+.container-list h1,
+.recre h1 {
+  margin-left: 80px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.recre li {
+  margin-top: 14px;
+}
+.mypage-right table tbody td:last-child {
+  padding: 0.75rem;
+}
+.header-bottom {
+  height: 180px;
+  background-image: url(../image/header.png);
+  background-size: cover;
+  background-position: 0 0px;
+  background-attachment: local;
+  position: relative;
+}
+.header-bottom::before {
+  content: "UNIVIERSITY";
+  color: #fff;
+  font-weight: bold;
+  font-size: 38px;
+  position: absolute;
+  bottom: 30px;
+  right: 70px;
+}
+/*********teachermypage*********/
+.t-check input[type="checkbox"] {
+  margin-left: 40px;
+}
+.t-num input[type="number"] {
+  width: 50px;
+}
+.box {
+  display: none;
+}
+
+.fintid-box {
+  width: 50%;
+  height: 60px;
+  border: 1px solid #00006f;
+  border-radius: 8px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+.fintid-box > i {
+  font-size: 25px;
+  line-height: 2.2;
+  margin-right: 10px;
+}
+
+/*********findidid**********/
+.findidid-container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  margin-top: 50px;
+  text-align: left;
+}
+.findidid-container ul{
+  padding: 0;
+}
+.findidid-container ul li{
+  margin-top: 10px;
+}
+.findidid-container ul input{
+  margin-left: 30px;
+}
+.findidid-container ul li input[type=text]{
+  margin-left: 60px;
+}
+.findidid-container ul li input[type=email]{
+  margin-left: 45px;
+}
+.findidid-container button{
+  margin-left: 20%;
+  margin-top: 30px;
+}
+
+/********findidre**********/
+.findidre-container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  margin-top: 50px;
+  text-align: left;
+}
+.findidre-container input[type="checkbox"]{
+  margin-right: 10px;
+}
+.findidrebtn{
+  margin-top: 50px;
+}
+.findidrebtn button{
+  margin-left: 10px;
+}
+.findidrebtn button:nth-child(2){
+  background-color: white;
+  color: #000;
+  border: 1px solid rgba(0,0,0,0.2);
+}

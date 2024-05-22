@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/classes2.css" />
+  </head>
+  <body>
+    <form action="#">
+      <div class="container">
+        <h2 class="text-center mb-4">UNIVERSITY</h2>
+        <ul class="tabs text-center">
+          <div id="menu_under_line"></div>
+          <li class="tab-link current" data-tab="tab-1">학생</li>
+          <li class="tab-link" data-tab="tab-2">교수</li>
+        </ul>
+        <hr />
+        <div id="tab-1" class="tab-content current">
+          <h2 class="text-center">PORTAL 로그인</h2>
+          <ul class="tabul">
+            <li class="mb-4">
+              <label class="col-3"></label
+              ><input
+                type="text"
+                name="uname"
+                class="rounded border border-3 col-6 input"
+                placeholder="아이디"
+              />
+            </li>
+            <li class="mb-4">
+              <label class="col-3"></label
+              ><input
+                type="number"
+                name="unum"
+                class="rounded border border-3 col-6"
+                placeholder="학번"
+              />
+            </li>
+            <li class="mb-4">
+              <label class="col-3"></label>
+              <input
+                type="password"
+                name="upass"
+                class="rounded border border-3 col-6"
+                placeholder="비밀번호"
+              />
+            </li>
+          </ul>
+        </div>
+        <div id="tab-2" class="tab-content">
+          <h2 class="text-center">PORTAL 로그인</h2>
+          <ul class="tabul">
+            <li class="mb-4">
+              <label class="col-3"></label
+              ><input
+                type="text"
+                name="uname"
+                class="rounded border border-3 col-6 input"
+                placeholder="아이디"
+              />
+            </li>
+            <li class="mb-4">
+              <label class="col-3"></label>
+              <input
+                type="password"
+                name="upass"
+                class="rounded border border-3 col-6"
+                placeholder="비밀번호"
+              />
+            </li>
+          </ul>
+        </div>
+        <button type="submit" class="btn btn-primary sub">로그인</button>
+        <div class="footer">
+          <label><input type="checkbox" /><a href="#">아이디찾기</a></label>
+          <ul>
+            <li><a href="#">아이디찾기</a></li>
+            <li><a href="#">비밀번호 찾기</a></li>
+          </ul>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

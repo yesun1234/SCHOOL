@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/classes3.css" />
+    <script>
+      
+    </script>
+</head>
+<body>
+    <form action="#">
+        <div class="mypage-container">
+            <header>
+                <h4 class="text-bold text-blue">UNIVERSITY</h4>
+                <ul>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="classes2.html">강의수강</a></li>
+                    <li><a href="#">학교소식</a></li>
+                </ul>
+            </header>
+            <div class="header-bottom">
+              
+            </div>
+            <div class="mypage-main mt-5">
+                <div class="mypage-left">
+                    <ul class="tabss">
+                        <li class="logo">
+                            <div class="left-logo">
+                                <p>MY PAGE</p>
+                                <h4>마이페이지</h4>
+                            </div>
+                        </li>
+                        <li
+                        class="tab-links current"
+                        onclick="change_btn(event)"
+                        data-tab="tab-11"
+                        id="jeon">
+                           장바구니
+                        </li>
+                        <li class="tab-links" onclick="change_btn(event)" id="gyo" data-tab="tab-2">시간표</li>
+                        <li class="tab-links" onclick="change_btn(event)" id="gyo" data-tab="tab-3">성적 확인</li>
+                        <li class="tab-links" onclick="change_btn(event)" id="gyo" data-tab="tab-4">회원정보 수정</li>
+                    </ul>
+                </div>
+                <div class="mypage-right">
+                  <!--mypage-right content 1-->
+                   
+                    <div id="tab-11" class="tab-content current jang">
+                       <h1>장바구니</h1>
+                        <table class="table mt-4">
+                          <col width="11%" />
+                          <col width="20%" />
+                          <col width="5%" />
+                          <col width="15%" />
+                          <col width="7%" />
+                          <col width="10%" />
+                          <col width="5%" />
+                          <col width="10%" />
+                          <thead class="text-center border-primary">
+                            <tr>
+                              <th>과목코드</th>
+                              <th>과목명</th>
+                              <th>학점</th>
+                              <th>담당교수</th>
+                              <th>강의시간</th>
+                              <th>요일</th>
+                              <th>취소</th>
+                              <th>선택</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-center">
+                            <tr>
+                              <td>J001</td>
+                              <td>JAVA</td>
+                              <td>3</td>
+                              <td>김미정</td>
+                              <td>9:00-12:00</td>
+                              <td>월 수</td>
+                              <td><div class="canclebox"><a href="#">삭제</a></div></td>
+                              <td>
+                                <input type="checkbox" class="bt btn btn-primary" id="java" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>P001</td>
+                              <td>PYTHON</td>
+                              <td>3</td>
+                              <td>안주영</td>
+                              <td>9:00-12:00</td>
+                              <td>월 수</td>
+                              <td><div class="canclebox"><a href="#">삭제</a></div></td>
+                              <td>
+                                <input type="checkbox" class="bt btn btn-primary" id="java" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>M001</td>
+                              <td>MYSQL</td>
+                              <td>3</td>
+                              <td>박승철</td>
+                              <td>9:00-12:00</td>
+                              <td>월 수</td>
+                              <td><div class="canclebox"><a href="#">삭제</a></div></td>
+                              <td>
+                                <input type="checkbox" class="bt btn btn-primary" id="java" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>M001</td>
+                              <td>MYSQL</td>
+                              <td>3</td>
+                              <td>박승철</td>
+                              <td>9:00-12:00</td>
+                              <td>월 수</td>
+                              <td><div class="canclebox"><a href="#">삭제</a></div></td>
+                              <td>
+                                <input type="checkbox" class="bt btn btn-primary" id="java" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>M001</td>
+                              <td>MYSQL</td>
+                              <td>3</td>
+                              <td>박승철</td>
+                              <td>9:00-12:00</td>
+                              <td>월 수</td>
+                              <td><div class="canclebox"><a href="#">삭제</a></div></td>
+                              <td>
+                                <input type="checkbox" class="bt btn btn-primary" id="java" />
+                              </td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                        <div class="mypage-btnbox">
+                          <button type="submit" class="btn classesbtn">신청</button>
+                        </div>
+                      </div>
+                     
+
+                      <!--mypage-right content 2-->
+                      <div id="tab-2" class="tab-content container-list">
+                        <h1>시간표</h1>
+                        <table class="table list-tb mt-4">
+                            <colgroup>
+                               <col width="15%">
+                               <col width="17%">
+                               <col width="17%">
+                               <col width="17%">
+                               <col width="17%">
+                               <col width="17%">
+                            </colgroup>
+                            <thead class="text-center">
+                                <tr>
+                                    <th>시간/요일</th>
+                                    <th>월</th>
+                                    <th>화</th>
+                                    <th>수</th>
+                                    <th>목</th>
+                                    <th>금</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                               <tr>
+                                   <td>9:00</td>
+                                   <td class="java">JAVA</td>
+                                   <td></td>
+                                   <td class="java">JAVA</td>
+                                   <td></td>
+                                   <td></td>
+                               </tr>
+                               <tr>
+                                <td>10:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>11:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>12:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>13:00</td>
+                                <td></td>
+                                <td class="mysql">MYSQL</td>
+                                <td></td>
+                                <td class="mysql">MYSQL</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>14:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>15:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>16:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="python padding-zero">PYTHON</td>
+                            </tr>
+                            <tr>
+                                <td>17:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>18:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                </div>
+
+                <!--mypage-right content 3-->
+                <div id="tab-4" class="recre tab-content">
+                  <form action="">
+                  <h1>회원정보 수정</h1>
+                   <ul class="mt-5">
+                    <li>
+                      <input type="password" class="form-control col-4" placeholder="비밀번호 수정">
+                    </li>
+                    <li>
+                      <input type="password" class="form-control col-4" placeholder="비밀번호 수정 확인">
+                    </li>
+                    <li>
+                      <input type="text" class="form-control col-6" placeholder="집주소 수정">
+                    </li>
+                   </ul>
+                   <div class="mypage-btnbox">
+                    <button type="submit" class="btn classesbtn">변경</button>
+                  </div>
+                </form>   
+                </div>
+
+                <!--mypage-right content 4-->
+                <div id="tab-3" class="score tab-content">
+                  <h1>학점이수 </h1>
+                  <table class="table list-tb mt-4">
+                    <colgroup>
+                       <col width="10%">
+                       <col width="10%">
+                       <col width="10%">
+                       <col width="10%">
+                       <col width="10%">
+                       <col width="10%">
+                       <col width="10%">
+                    </colgroup>
+                    <thead class="text-center">
+                        <tr>
+                            <th>학년도</th>
+                            <th>학기</th>
+                            <th>신청학점</th>
+                            <th>전공학점</th>
+                            <th>교양</th>
+                            <th>총 취득학점</th>
+                            <th>평균학점</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                      <tr>
+                        <td>2023</td>
+                        <td>1</td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>18</td>
+                        <td>3.83</td>
+                    </tr>
+                    <tr>
+                     <td>2023</td>
+                     <td>2</td>
+                     <td>18</td>
+                     <td>12</td>
+                     <td>6</td>
+                     <td>18</td>
+                     <td>4.0</td>
+                 </tr>
+                       <tr>
+                           <td>2024</td>
+                           <td>1</td>
+                           <td>18</td>
+                           <td>12</td>
+                           <td>6</td>
+                           <td>18</td>
+                           <td>3.83</td>
+                       </tr>
+                       <tr>
+                        <td>2024</td>
+                        <td>2</td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>18</td>
+                        <td>4.0</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
